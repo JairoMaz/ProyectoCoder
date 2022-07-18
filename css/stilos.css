@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;500&family=Open+Sans&family=Raleway:ital,wght@0,600;0,800;1,400&display=swap');
+/*    font-family: 'Arima', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;*/
+
+*{ /*esto es para no tener problema en los navegadores*/
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --clr-primario:#E8DED2;
+    --clr-segundario:#A3D2CA;
+    --clr-terciario:#5EAAA8;
+    --clr-cuarto:#056676;
+    --txt-titulos:'Arima', cursive;
+    --txt-texto:'Raleway', sans-serif;
+    --txt-textoN:'Open Sans', sans-serif;
+}
+
+body{
+    font-family: var(--txt-textoN);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 90%;
+    max-width: 1100px;
+    height:100%;
+    margin: auto;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.weight-400{
+    font-weight: 400;
+}
+.weight-600{
+    font-weight: 600;
+}
+.parrafo{
+    margin-bottom: 20px;
+}
+
+.header{
+    height: 500px;
+}
+.img-hero{
+    width:100%;
+    height: auto;
+    grid-column: 7/13;
+}
+.img{
+    width: 95%;
+    max-width: 600px;
+}
+.textoHero{
+    grid-column:1/7;
+    padding-right: 20px;
+}
+.textoHero p{
+    text-align: justify;
+}
+.cta{
+    width: 130px;
+    background:black;
+    color:#fff;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+/*header*/
+.servicios{
+    height: 370px;
+    background:linear-gradient(180deg, white 50%, black 50%);
+}
+
+.items{
+    grid-column: 1/-1;
+    display: flex;
+    width: 100%;    
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item{
+    width:30% ;
+    background: #ffff;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+    overflow: hidden;
+    height: 220px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+[class^="fa-solid fa-rug"]{
+    font-size: 50px;
+    text-align: center;
+}
+[class^="fa-brands fa-instagram"]{
+    font-size: 50px;
+    text-align: center;    
+}
+[class^="fa-brands fa-whatsapp"]{
+    font-size: 50px;
+    text-align: center;
+}
+.tituloServicios{
+    margin: 20px 0;
+}
+
+/*Nosotros*/
+.Nosotros{
+    background:black;
+    color:white;
+    height: auto;
+    padding-bottom: 60px;
+} 
+.texto-nosotros{
+    grid-column: 1/-1;
+    text-align: center;
+}
+.texto-nosotros .parrafo{
+    margin-top: 10px;
+    color:grey;
+}
+.numeros{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.number{
+    text-align: center;
+    font-size: 30px;
+    width: 22%;
+}
+
+/*Mision*/
+
+.mission{
+    padding: 80px 0;
+}
+.textos-mision{
+    grid-column: 7/13;
+    grid-row: 1/-1;
+    margin-bottom: 20px;
+}
+
+.img-mision{
+    grid-column:1/7;
+    grid-row: 1/-1;
+}
+
+/*Footer*/
+
+footer{
+    background: black;
+    color:white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.textos-Footer{
+    grid-column: 1/-1;
+    margin-bottom: 30px;
+
+}
+[class^="footer-Item"] a{
+    color: white;
+    font-size: 30px;
+}
+[class^="footer-Item"]{
+    grid-column: span 3;
+}
+
+@media screen and (max-width:800px){
+    .header{
+        height: auto;
+    }
+    .grid{
+        grid-gap: 30px;
+    }
+    .img-hero, .textoHero{
+        grid-column: 1/-1;
+    }
+    .img-hero{
+        text-align: center;
+    }
+    .textoHero{
+        margin-top: 40px;
+    }
+    .servicios{
+        height: auto;
+        margin-top: 40px;
+    }
+    .item{
+        width: 60%;
+        margin: 40px 0;
+        height: auto;
+        padding: 40px;
+    }
+    .img-mision{
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        text-align: center;
+    }
+    .textos-mision{
+        grid-column:1/-1;
+        grid-row: 1/2;
+        align-self: center;
+    }
+}
+@media screen and (max-width: 400px){
+    .img{
+        max-width: 170px;
+    }
+    .grid{
+        grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    }
+    .item{
+        width: 90%;
+        flex-shrink: 0 ;
+    }
+    .number{
+        width: 55%;
+        border-bottom: 1px dotted white;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .textos-mision h3{
+        margin: 15px;
+    }
+    [class^="footer-Item"]{
+        grid-column:span 1/-1;
+    }
+}
