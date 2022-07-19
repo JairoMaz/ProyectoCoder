@@ -17,7 +17,6 @@
     --txt-texto:'Raleway', sans-serif;
     --txt-textoN:'Open Sans', sans-serif;
 }
-
 body{
     font-family: var(--txt-textoN);
 }
@@ -72,13 +71,11 @@ body{
     text-decoration: none;
     border-style: solid;
 }
-
 /*header*/
 .servicios{
     height: 370px;
     background:linear-gradient(180deg, white 50%, black 50%);
 }
-
 .items{
     grid-column: 1/-1;
     display: flex;
@@ -96,6 +93,16 @@ body{
     height: 220px;
     padding: 20px 10px;
     text-align: center;
+}
+
+.item:hover{
+    transform:scale(0.9);
+    background: var(--clr-segundario);
+}
+.item{
+    transition-property: all;
+    transition-duration:1s;
+    transition: all 2s;
 }
 
 [class^="fa-solid fa-rug"]{
@@ -140,9 +147,7 @@ body{
     font-size: 30px;
     width: 22%;
 }
-
 /*Mision*/
-
 .mission{
     padding: 80px 0;
 }
@@ -158,9 +163,8 @@ body{
 }
 
 /*Footer*/
-
 footer{
-    background: black;
+    background:black;
     color:white;
     text-align: center;
     padding: 60px 0;
