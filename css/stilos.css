@@ -64,12 +64,13 @@ body{
 }
 .cta{
     width: 130px;
-    background:black;
-    color:#fff;
+    background:var(--clr-segundario);
+    color:black;
     display: inline-block;
     text-align: center;
     padding: 10px 0;
     text-decoration: none;
+    border-style: solid;
 }
 
 /*header*/
