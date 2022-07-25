@@ -20,6 +20,11 @@
 body{
     font-family: var(--txt-textoN);
 }
+
+.Texto-Productos{
+    text-align: center;
+}
+
 .grid{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -54,6 +59,7 @@ body{
     width: 95%;
     max-width: 600px;
 }
+
 .textoHero{
     grid-column:1/7;
     padding-right: 20px;
