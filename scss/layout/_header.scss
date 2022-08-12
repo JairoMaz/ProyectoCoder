@@ -1,24 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;500&family=Open+Sans&family=Raleway:ital,wght@0,600;0,800;1,400&display=swap');
-/*    font-family: 'Arima', cursive;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;*/
+/*header*/
 
-*{ /*esto es para no tener problema en los navegadores*/
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
-}
-:root{
-    --clr-primario:#E8DED2;
-    --clr-segundario:#A3D2CA;
-    --clr-terciario:#5EAAA8;
-    --clr-cuarto:#056676;
-    --txt-titulos:'Arima', cursive;
-    --txt-texto:'Raleway', sans-serif;
-    --txt-textoN:'Open Sans', sans-serif;
-}
 body{
-    font-family: var(--txt-textoN);
+    font-family:$txt-textoN;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -72,7 +55,7 @@ body{
 }
 .cta{
     width: 130px;
-    background:var(--clr-segundario);
+    background:$clr-segundario;
     color:black;
     display: inline-block;
     text-align: center;
@@ -106,7 +89,7 @@ body{
 
 .item:hover{
     transform:scale(0.9);
-    background: var(--clr-segundario);
+    background:$clr-segundario;
 }
 .item{
     transition-property: all;
