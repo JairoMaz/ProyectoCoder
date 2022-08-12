@@ -82,7 +82,7 @@ body {
 /*header*/
 .servicios {
   height: 370px;
-  background: linear-gradient(180deg, white 50%, black 50%);
+  background: linear-gradient(#A3D2CA, #E8DED2);
 }
 
 .items {
@@ -137,8 +137,8 @@ body {
 
 /*Nosotros*/
 .Nosotros {
-  background: black;
-  color: white;
+  background: linear-gradient(#E8DED2, #A3D2CA);
+  color: #056676;
   height: auto;
   padding-bottom: 60px;
 }
@@ -150,7 +150,7 @@ body {
 
 .texto-nosotros .parrafo {
   margin-top: 10px;
-  color: grey;
+  color: black;
 }
 
 .numeros {
@@ -184,8 +184,8 @@ body {
 
 /*Footer*/
 footer {
-  background: black;
-  color: white;
+  background: linear-gradient(#E8DED2, #A3D2CA);
+  color: black;
   text-align: center;
   padding: 60px 0;
   margin-top: auto;
@@ -197,7 +197,7 @@ footer {
 }
 
 [class^=footer-Item] a {
-  color: white;
+  color: black;
   font-size: 30px;
 }
 
