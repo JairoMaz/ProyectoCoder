@@ -60,6 +60,10 @@ body{
     text-decoration: none;
     box-shadow: 0 0 6px rgba(0,0,0,0.5);
 }
+.cta:hover{
+    transform:scale(0.9);
+    background:$clr-primario;
+}
 /*header*/
 .servicios{
     height: 370px;
