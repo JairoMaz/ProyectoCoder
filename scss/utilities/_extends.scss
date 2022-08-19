@@ -1,0 +1,10 @@
+[class^="fa-solid fa-rug"]{
+    font-size: 50px;
+    text-align: center;
+}
+[class^="fa-brands fa-instagram"]{ 
+    @extend [class^="fa-solid fa-rug"]   
+}
+[class^="fa-brands fa-whatsapp"]{
+    @extend [class^="fa-solid fa-rug"]
+}

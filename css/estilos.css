@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+[class^="fa-solid fa-rug"], [class^="fa-brands fa-whatsapp"], [class^="fa-brands fa-instagram"] {
+  font-size: 50px;
+  text-align: center;
+}
+
 /*header*/
 body {
   font-family: "Open Sans", sans-serif;
@@ -114,21 +119,6 @@ body {
   transition-property: all;
   transition-duration: 1s;
   transition: all 250ms;
-}
-
-[class^="fa-solid fa-rug"] {
-  font-size: 50px;
-  text-align: center;
-}
-
-[class^="fa-brands fa-instagram"] {
-  font-size: 50px;
-  text-align: center;
-}
-
-[class^="fa-brands fa-whatsapp"] {
-  font-size: 50px;
-  text-align: center;
 }
 
 .tituloServicios {
